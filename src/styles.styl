@@ -1,11 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
-@import "assets/styl/lib/_varibles.styl"
-@import "assets/styl/lib/_mixins.styl"
-@import "assets/styl/lib/_functions.styl"
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,400,700,900|Roboto:300,400,500')
+@import "~src/assets/styl/lib/_variables.styl"
+html
+  font-family Roboto
+p, span
+  font-family Roboto
+  font-size size-p
 
-@import "assets/styl/layout/_site.styl"
-
-@import "assets/styl/base/_links.styl"
-@import "assets/styl/base/_buttons.styl"
-@import "assets/styl/base/_typography.styl"
-
+h1, h2, h3, h4, h5, h6
+  font-family Raleway
+.margin-lft-rght
+  margin 0px 15px
+.margin-lft
+  margin-left 15px !important
+.margin-rght
+  margin-right 15px !important
+a:hover
+  color primary-cn !important
+a.active
+  color primary-cn !important
